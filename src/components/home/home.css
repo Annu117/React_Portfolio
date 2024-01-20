@@ -19,7 +19,7 @@
 }
 .home__subtitle,
 .home__job span {
-    font-size: var(--small-font-size);
+    /* font-size: var(--small-font-size); */
     color: var(--title-color);
 }
 
@@ -31,8 +31,11 @@
 .home__job b {
     font-family: var(--second-font);
     font-size: var(--h2-font-size);
+    /* font-size:  var(--large-font-size); */
     margin-left: 10px;
+    display: inline-block;
 }
+
 .home__title{
     /* font-size: var(--biggest-font-size); */
     text-shadow: 2px 2px hsl(0 0% 0%), -2px 2px hsl(0,0%,0%), 2px -2px hsl(0,0%,0%), -2px -2px hsl(o, 0%, 0%), 5px 5px 0 rgb(0 0 0 / 20%);
@@ -94,7 +97,26 @@
     border-radius: 50%;
     position: relative;
     z-index: 1;
+    /* overflow: hidden; */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+/* .home__banner::before,
+.home__banner::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px; 
+    top: 50%;
+    left: 0;
+    transform-origin: top center;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+} */
+/* .home__banner::after {
+    top: auto;
+    bottom: 0;
+    transform-origin: bottom center;
+} */
 
 .home__profile{
     position: absolute;
@@ -108,6 +130,14 @@
     /* margin-left: 500px; */
     object-fit: cover;
 }
+.home__banner:hover {
+    /* transform: scale(1.1); */
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.307); /* Adding a subtle box-shadow */
+}
+/* .home__banner:hover::before,
+.home__banner:hover::after {
+    transform: scaleX(1);
+} */
 .home__data{
     border: 2px solid var(--border-color);
     background: var(--container-color);
@@ -175,3 +205,9 @@
     bottom: 0;
     left: -2px;
 }
+
+
+.typewriter-text {
+    font-size: 54px; /* Set your desired font size here */
+    /* Add any additional styling you want */
+  }

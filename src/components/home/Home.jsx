@@ -1,13 +1,20 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import ReactTyped from "react-typed";
 import porfileImg from '../../assets/profile-img.png';
 import shapeOne from '../../assets/shape-1.png';
 import shapeTwo from '../../assets/shape-2.png';
 import {FaGithub, FaLinkedin, FaInstagram} from 'react-icons/fa';
 import {SiGmail} from 'react-icons/si';
 // import '../../App.css'; 
+import Tilt from "react-parallax-tilt";
+import Typewriter from "typewriter-effect";
+
 import './home.css';
+// import './App.css';
+
 const Home = () => {
-    // console.log('Home component rendered');
+
+    
   return (
   <section className='home' id='home'>
     <div className="home__wrapper">
@@ -21,13 +28,33 @@ const Home = () => {
         </h1>
 
         <p className='home__job'>
-            <span className='text-cs'>I Am</span><b>Web Developer</b>
+            {/* <span className='text-cs'>I Am</span><b>{typedText}</b> */}
+            <span className='text-cs'>I Am a</span>
+            <b >
+                {/* Full-Stack Developer */}
+                <Typewriter
+                    options={{
+                        strings: [
+                        "Web Developer",
+                        "Full-Stack Developer",
+                        "Designer",
+                        ],
+                        autoStart: true,
+                        loop: true,
+                        deleteSpeed: 50,
+                    }}
+                    />
+            </b>
+          
         </p>
         <div className='home__img-wrapper'>
+            <Tilt scale={1.05} transitionSpeed={3000}>
             <div className='home__banner'>
-                <img src={porfileImg} alt="" className='home__profile' />
+                
+                <img src={porfileImg} alt="avatar" className='home__profile' />
+               
             </div>
-
+            </Tilt>
             {/* <p className='home__data home__data-one'>
                 <span className='text-lg'>12 <b>+</b></span>
                 <span className='text-sm text-cs'>Years of <span>Experience</span></span>
@@ -40,7 +67,7 @@ const Home = () => {
             {/* <img src={shapeTwo} alt="" className="shape shape__2" />
             <img src={shapeTwo} alt="" className="shape shape__3" /> */}
         </div>
-
+        
         <p className='home__text'>
         Third year Computer Science and Design student at Indraprastha Institute of Information Technology, Delhi. 
         Welcome to my little space on the internet where I document my journey of learning new technologies and finding my place in the tech world.

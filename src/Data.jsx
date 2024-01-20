@@ -16,10 +16,10 @@ export const links = [
     name: 'Home',
     path: 'home',
   },
-  {
-    name: 'Services',
-    path: 'services',
-  },
+  // {
+  //   name: 'Services',
+  //   path: 'services',
+  // },
   {
     name: 'Skills',
     path: 'skills',
@@ -32,22 +32,22 @@ export const links = [
     name: 'Resume',
     path: 'resume',
   },
-  {
-    name: 'Testimonials',
-    path: 'testimonial',
-  },
-  {
-    name: 'Pricing',
-    path: 'pricing',
-  },
-  {
-    name: 'Blog',
-    path: 'blog',
-  },
-  {
-    name: 'Contact',
-    path: 'contact',
-  },
+  // {
+  //   name: 'Testimonials',
+  //   path: 'testimonial',
+  // },
+  // {
+  //   name: 'Pricing',
+  //   path: 'pricing',
+  // },
+  // {
+  //   name: 'Blog',
+  //   path: 'blog',
+  // },
+  // {
+  //   name: 'Contact',
+  //   path: 'contact',
+  // },
 ];
 
 export const services = [
@@ -94,7 +94,7 @@ export const skills = [
     name: 'Python',
     percentage: 95,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      '',
   },
 
   {
@@ -102,7 +102,7 @@ export const skills = [
     name: 'React',
     percentage: 75,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      '',
   },
 
   {
@@ -110,23 +110,23 @@ export const skills = [
     name: 'Java',
     percentage: 75,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      '',
   },
 
   {
     id: 4,
     name: 'JavaScript',
-    percentage: 80,
+    percentage: 85,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      '',
   },
 
   {
     id: 5,
-    name: 'C++',
+    name: 'Cpp',
     percentage: 75,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      '',
   },
 
   {
@@ -134,7 +134,35 @@ export const skills = [
     name: 'MongoDB',
     percentage: 80,
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+      '',
+  },
+  {
+    id: 7,
+    name: 'HTML',
+    percentage: 95,
+    description:
+      '',
+  },
+  {
+    id: 8,
+    name: 'CSS',
+    percentage: 95,
+    description:
+      '',
+  },
+  {
+    id: 9,
+    name: 'Git',
+    percentage: 90,
+    description:
+      '',
+  },
+  {
+    id: 10,
+    name: 'MySQL',
+    percentage: 90,
+    description:
+      '',
   },
 ];
 
