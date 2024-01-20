@@ -19,6 +19,7 @@ const Home = () => {
   <section className='home' id='home'>
     <div className="home__wrapper">
     <div className="home__container container">
+        
         <p className='home__subtitle text-cs'>
             Hello, <span>My Name Is </span>
         </p>

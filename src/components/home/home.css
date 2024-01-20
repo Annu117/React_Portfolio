@@ -12,6 +12,7 @@
     width: 100%;
     /* background-color: var(--primary-color); */
     position: relative;
+    margin-top: 50px;
 }
 .home__subtitle,
 .home__job{
