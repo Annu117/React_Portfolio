@@ -1,2 +1,2 @@
-# React + Vite
-Personal Portfolio
+# Personal Portfolio
+React + Vite
