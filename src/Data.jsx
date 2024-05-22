@@ -4,7 +4,7 @@ import Project3 from './assets/project3.jpg';
 import Project4 from './assets/project5.jpg';
 import Project5 from './assets/project4.jpg';
 import Project6 from './assets/project6.jpg';
-import trafficSignDetection from './assets/trafficSignDetection.jpg'
+import trafficSignDetection from './assets/TrafficSignDetection.jpg'
 import livingcell from './assets/LivingCell.jpg'
 
 import Testimonial1 from './assets/testimonial1.jpg';
