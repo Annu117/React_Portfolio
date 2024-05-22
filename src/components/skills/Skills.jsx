@@ -1,12 +1,13 @@
 import React from 'react';
 import { skills } from '../../Data';
 import './skills.css'
-import {FaPython, FaReact, FaJava, FaHtml5, FaCss3, FaGitAlt} from 'react-icons/fa';
+import {FaPython, FaReact, FaJava, FaHtml5, FaCss3, FaGitAlt, FaFigma} from 'react-icons/fa';
 import {RiJavascriptFill} from 'react-icons/ri';
-import {TbBrandCpp} from 'react-icons/tb';
+// import {TbBrandCpp} from 'react-icons/tb';
+import { TbBrandCpp, TbBrandReactNative } from "react-icons/tb";
+
 import {DiMongodb} from 'react-icons/di';
 import { SiMysql } from "react-icons/si";
-
 const iconMapping = {
   Python: <FaPython />,
   React: <FaReact />,
@@ -18,6 +19,9 @@ const iconMapping = {
   Cpp: <TbBrandCpp />,
   MongoDB: <DiMongodb />,
   MySQL: <SiMysql />,
+  ReactNative: <TbBrandReactNative />,
+  Figma: <FaFigma />
+  // ReactNative: <TbBrandReactNat />
 };
 
 const Skills = () => {

@@ -30,6 +30,7 @@
   }
   .nav__logo:hover{
     color: var(--primary-color);
+    transition: all 0.7s var(--transition);
   }
   .nav__menu {
     display: flex;
@@ -51,7 +52,7 @@
     text-decoration: none;
     color: #fff;
     /* font-weight: bold; */
-    transition: color 0.3s ease;
+    transition: color 0.7s ease;
     cursor: pointer;
   }
   

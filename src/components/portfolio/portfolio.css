@@ -81,14 +81,11 @@
     font-size: var(--h4-font-size);
 }
 .portfolio__description{
-    min-height: 125px;
+    min-height: 190px;
 }
-/* .portfolio__items{
-    padding: 70px 70px;
-} */
+
 .project__link{
-    margin-top: 20%;
-    /* color: var(--primary-color); */
+    margin-top: 7%;
 }
 .project__link:hover{
     color: var(--primary-color);

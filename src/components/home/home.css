@@ -68,6 +68,10 @@
     display: flex;
     column-gap: 70px;
 }
+.hero__link:hover{
+    color: var(--primary-color);
+    transition: all 0.7s var(--transition);
+}
 .hero__link::before{
     content: '';
     position: absolute;
@@ -207,8 +211,16 @@
     left: -2px;
 }
 
-
 .typewriter-text {
     font-size: 54px; /* Set your desired font size here */
     /* Add any additional styling you want */
   }
+
+.zoom-text {
+    display: inline-block;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.text-cs:hover .zoom-text {
+    transform: scale(1.1); /* Zoom in by 10% */
+}

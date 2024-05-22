@@ -4,6 +4,8 @@ import Project3 from './assets/project3.jpg';
 import Project4 from './assets/project5.jpg';
 import Project5 from './assets/project4.jpg';
 import Project6 from './assets/project6.jpg';
+import trafficSignDetection from './assets/trafficSignDetection.jpg'
+import livingcell from './assets/LivingCell.jpg'
 
 import Testimonial1 from './assets/testimonial1.jpg';
 import Testimonial2 from './assets/testimonial2.jpg';
@@ -164,18 +166,33 @@ export const skills = [
     description:
       '',
   },
+  {
+    id: 11,
+    name: 'ReactNative',
+    percentage: 75,
+    description:
+      '',
+  },
+  {
+    id: 12,
+    name: 'Figma',
+    percentage: 90,
+    description:
+      '',
+  },
 ];
 
 export const projects = [
   {
     id: 1,
     img: Project1,
-    category: 'Web Development',
+    category: 'Development',
     title: 'ErgoAlert',
     description:
       'Developed a real-time posture monitoring website. Alerting sound when in a risk position. Mainly for long sitting hours job/work. Giving analysis reports for a particular period of time—recommendations. Yoga poses(exercise) to follow.',
     githubLink: "https://github.com/Annu117/Ergonomic_Risk.git",
     websiteLink: "https://ergonomicrisk.streamlit.app/",
+    report: "https://github.com/Annu117/ErgoAlert/blob/d4b572cb402a0e28f085226b6fb44210928a75d8/G13_EFD_Project_Paper.pdf",
     },
   {
     id: 2,
@@ -188,15 +205,27 @@ export const projects = [
     },
   {
     id: 3,
-    img: Project3,
-    category: 'Development',
-    title: 'Tank Stars',
+    img: trafficSignDetection,
+    category: 'Machine Learning',
+    title: 'Traffic Sign Detection',
     description:
-      'Similar to a popular game, Tank Stars. Build on LibGDX framework utilising concepts of OOPs and eventdriven programming. Includes JUnit Tests and design patterns.',
-    githubLink: "https://github.com/Annu117/AP-TankStar.git",
+      'Developed a machine learning system for traffic sign detection (TSD) to enhance road safety, achieving a top accuracy of 96.9% using VGG16 CNN architecture on the GTSRB dataset, with a focus on real-time notifications for drivers and integration with autonomous vehicles.',
+    githubLink: "https://github.com/Annu117/Traffic-Sign-Detection.git",
+    report: "https://github.com/Annu117/Traffic-Sign-Detection/blob/47ecbb91424603ee2c6ce5d9cfa92fb39464be0a/SML%20Final%20Report.pdf",
     },
+    {
+      id: 4,
+      img: livingcell,
+      category: 'Machine Learning',
+      title: 'Real-Time CDC crossmatch imaging',
+      description:
+        'This project is a collaboration between IIITD, Max HealthCare, and iHub Anubhuti to develop a DL-based predictive model using UNet and YOLOv9 for analyzing CDC crossmatch imaging and FISH techniques, aiming to improve organ transplantation risk assessment.',
+      // githubLink: "https://github.com/Annu117/Yoga.git", 
+      // websiteLink: "https://annu117.github.io/Yoga/"
+      },
+
   {
-    id: 4,
+    id: 5,
     img: Project5,
     category: 'Design',
     title: 'Yoga Journal',
@@ -206,25 +235,36 @@ export const projects = [
     websiteLink: "https://annu117.github.io/Yoga/"
     },
   {
-    id: 5,
+    id: 6,
     img: Project4,
     category: 'Design',
     title: 'Sensor App',
     description:
       "Information gathering: Interviewed several working women, Focused group.\nSensor App: Designed a Figma application for women's safety during travel in India, featuring an interactive map with safety level ratings and integrated audio generation using Anima.",
     githubLink: "",
+    websiteLink: "https://www.figma.com/proto/PZ7ICJCYcDw5jSNEagAyUI/Senser?node-id=32%3A1830&scaling=scale-down&page-id=32%3A2&starting-point-node-id=32%3A1830&show-proto-sidebar=1",
     },
   
   {
-    id: 6,
+    id: 7,
     img: Project6,
-    category: 'Development',
+    category: 'Full-Stack Development',
     title: 'Claim Management System',
     description:
       'Developed a website using HTML, CSS, and JavaScript for the front end and Java with MySQL for the back end. The current version demonstrated above excludes the JDBC connection',
-    githubLink: "https://github.com/Annu117/CMS.git",
+    githubLink: "https://github.com/Annu117/cms_.git",
     websiteLink: "https://annu117.github.io/CMS/",
     },
+  {
+    id: 8,
+    img: Project3,
+    category: 'Development',
+    title: 'Tank Stars',
+    description:
+      'Similar to a popular game, Tank Stars. Build on LibGDX framework utilising concepts of OOPs and eventdriven programming. Includes JUnit Tests and design patterns.',
+    githubLink: "https://github.com/Annu117/AP-TankStar.git",
+    },
+  
 ];
 
 export const cv = [

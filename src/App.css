@@ -229,6 +229,7 @@ img{
   align-items: center;
   color: var(--title-color);
   font-weight: 700;
+  transition: all 0.7s var(--transition);
 }
 .link:hover{
   color: var(--primary-color);
@@ -236,9 +237,9 @@ img{
 .link__icon{
   color: var(--primary-color);
   margin-left: 20px;
-  transition: all 0.3s var(--transition);
+  /* transition: all 0.4s var(--transition); */
 }
-.link:hove .link__icon{
+.link:hover .link__icon{
   margin-left: 15px;
 }
 .c__shape{
@@ -248,4 +249,9 @@ img{
   height: 141px;
   /* top: 6px; */
   z-index: 1;
+}
+
+.btn.text-cs, .hero__link.text-cs {
+  color: var(--text-color);
+  text-decoration: none; /* Ensures links don't have underlines */
 }

@@ -56,41 +56,16 @@ function App() {
 
   
   return (
-    <main className= 'main'>
+
+    <main className='main'>
       <Header />
-      <Home />
-      <Skills />
-      <Portfolio />
-      <Resume />
+      <Home id="home" />
+      {/* <Services id="services" /> */}
+      <Skills id="skills" />
+      <Portfolio id="work" />
+      <Resume id="resume" />
     </main>
 
-    // <Router>
-    //   <Preloader load={load} />
-    //     <Navbar />
-    //     <ScrollToTop />
-    //     <Routes>
-    //       <Route path="/" element={<Home />} />
-    //       <Route path="/services" element={<Services />} />
-    //       <Route path="/skills" element={<Skills />} />
-    //       <Route path="/portfolio" element={<Portfolio />} />
-    //       <Route path="/resume" element={<Resume />} />
-    //       <Route path="*" element={<Navigate to="/"/>} />
-    //     </Routes>
-    // </Router>
-
-
-    // <Router>
-    //   <div>
-    //     <Navbar />
-    //     <Routes>
-    //       <Route path="/" element={<Home />} />
-    //       <Route path="/services" element={<Services />} />
-    //       <Route path="/skills" element={<Skills />} />
-    //       <Route path="/portfolio" element={<Portfolio />} />
-    //       <Route path="/resume" element={<Resume />} />
-    //     </Routes>
-    //   </div>
-    // </Router>
   )
 }
 

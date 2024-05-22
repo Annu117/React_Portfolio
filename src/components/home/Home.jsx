@@ -5,11 +5,11 @@ import shapeOne from '../../assets/shape-1.png';
 import shapeTwo from '../../assets/shape-2.png';
 import {FaGithub, FaLinkedin, FaInstagram} from 'react-icons/fa';
 import {SiGmail} from 'react-icons/si';
-// import '../../App.css'; 
 import Tilt from "react-parallax-tilt";
 import Typewriter from "typewriter-effect";
 
 import './home.css';
+import Skills from '../skills/Skills';
 // import './App.css';
 
 const Home = () => {
@@ -36,8 +36,7 @@ const Home = () => {
                 <Typewriter
                     options={{
                         strings: [
-                        "Web Developer",
-                        "Full-Stack Developer",
+                        "Developer",
                         "Designer",
                         ],
                         autoStart: true,
@@ -88,15 +87,18 @@ const Home = () => {
             </a>
         </div>
         <div className='home__btns'>
-            <div href='' className="btn text-cs">
-                Download CV
-                </div>
-            <div href='' className='hero__link text-cs'>
-                My Skills
-            </div>
+            <a href='https://drive.google.com/drive/folders/1VkRf37llfrpfcXqO5VGrINK4u6SkRbMI?usp=sharing' className="btn text-cs" target="_blank"  download>
+                {/* Download CV */}
+                <span class="zoom-text">Download CV</span>
+
+            </a>
+            <a href='#skills' className='hero__link text-cs'>
+              My Skills
+            </a>
         </div>
     </div>
     </div>
+    {/* <Skills id="skills" /> */}
   </section>
   );
 }

@@ -7,7 +7,7 @@ const Items = ({porjectItems}) => {
   return (
     <>
     {porjectItems.map((porjectItem) =>{
-        const {id, img, category, title, description, githubLink, websiteLink} = porjectItem;
+        const {id, img, category, title, description, githubLink, websiteLink, report} = porjectItem;
         return(
             <motion.div
             layout 
@@ -21,31 +21,30 @@ const Items = ({porjectItems}) => {
                 </div>
                 <span className="portfolio__category text-cs">{category}</span>
                 <h3 className="portfolio__title">{title}</h3>
-                <p className="portfolio__description">{description}</p>
+                <div className="description-container">
+
+                  <p className="portfolio__description">{description}</p>
             <div className="links-container">
-              <a
-                href={githubLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="link project__link"
-              >
+              <a href={githubLink} target="_blank" rel="noopener noreferrer" className="link project__link" >
                 GitHub
               </a>
               {websiteLink && ( // Render website link only if available
                 <>
                   <span className="separator">  |  </span>
-                  <a
-                    href={websiteLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link project__link"
-                  >
+                  <a href={websiteLink} target="_blank" rel="noopener noreferrer" className="link project__link" >
                     Website
-                    {/* <FaArrowRight className='link__icon'></FaArrowRight> */}
                   </a>
                 </>
-              )}
+              )}{report && ( // Render website link only if available
+              <>
+                <span className="separator">  |  </span>
+                <a href={report} target="_blank" rel="noopener noreferrer" className="link project__link" >
+                  Report
+                </a>
+              </>
+            )}
               <FaArrowRight className='link__icon'></FaArrowRight>
+            </div>
             </div>
             {/* <img src={shapeTwo} alt="" className="shape c__shape" /> */}
 
