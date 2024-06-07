@@ -191,7 +191,7 @@ export const projects = [
     description:
       'Developed a real-time posture monitoring website. Alerting sound when in a risk position. Mainly for long sitting hours job/work. Giving analysis reports for a particular period of time—recommendations. Yoga poses(exercise) to follow.',
     githubLink: "https://github.com/Annu117/Ergonomic_Risk.git",
-    websiteLink: "https://ergonomicrisk.streamlit.app/",
+    websiteLink: "https://ergonomic-risk.onrender.com/",
     report: "https://github.com/Annu117/ErgoAlert/blob/d4b572cb402a0e28f085226b6fb44210928a75d8/G13_EFD_Project_Paper.pdf",
     },
   {
