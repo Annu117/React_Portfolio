@@ -87,7 +87,9 @@ const Home = () => {
             </a>
         </div>
         <div className='home__btns'>
-            <a href='https://drive.google.com/drive/folders/1VkRf37llfrpfcXqO5VGrINK4u6SkRbMI?usp=sharing' className="btn text-cs" target="_blank"  download>
+{/*             <a href='https://drive.google.com/drive/folders/1VkRf37llfrpfcXqO5VGrINK4u6SkRbMI?usp=sharing' className="btn text-cs" target="_blank"  download> */}
+           <a href='' className="btn text-cs">
+
                 {/* Download CV */}
                 <span class="zoom-text">Download CV</span>
 
