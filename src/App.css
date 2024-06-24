@@ -9,8 +9,9 @@
 
 :root{
   /**
-  * colours
+  * colors
   */
+  /* Dark theme variables */
   --primary-color: hsl(165, 60%, 40%);
   --title-color: hsl(0,0%, 100%);
   --text-color: hsl(0,0%, 92%);
@@ -64,7 +65,62 @@
   */
  --transition: cubic-bezier(0.3, 0, 0.3, 1);
 }
+/*-----------------------------------*\
+#LIGHT THEME
+\*-----------------------------------*/
+.light-theme{
+  --title-color: #000;
+  --text-color: #262626;
+  --bg-color: #fff;
+  --bg-color-alt: #fff;
+  --container-color: #f0ebe3;
+  --border-color: #000;
+/**
+* shadow
+*/
+--shadow: 5px 5px rgb(0 0 0 / 20%);
+}
+.light-theme .skills__bar{
+  background: rgba(0, 0, 0, 0.1);
+}
 
+.light-theme .skills__percentage{
+  background: var(--border-color);
+}
+.light-theme .skills__bar span{
+  background-color: var(--primary-color);
+}
+/* Add transitions to the body and other elements */
+body, .header, .nav__link, .btn, .theme__toggle {
+  transition: background-color 0.7s, color 0.7s;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+.header {
+  background-color: var(--container-color);
+  color: var(--title-color);
+}
+
+.nav__link {
+  color: var(--text-color);
+}
+
+.btn {
+  background-color: var(--container-color);
+  color: var(--title-color);
+  border-color: var(--border-color);
+}
+
+.theme__toggle {
+  color: var(--title-color);
+}
 /*--------------------------------------------*\
 #RESET
 \*--------------------------------------------*/
@@ -121,12 +177,16 @@ img{
 #REUSABLE CSS CLASSES
 \*--------------------------------------------*/
 .container{
-  /* background-color: var(--primary-color); */
   max-width: 1300px;
   padding-inline: 12px;
   margin-inline: auto;
   /* margin-left: 50px;
   margin-right: 150%; */
+}
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 20px; 
+  }
 }
 .grid{
   display: grid;
@@ -183,7 +243,7 @@ img{
   opacity: 0.6;
 }
 .btn:hover {
-  text-decoration: none; /* Add this line to remove link underline on hover */
+  text-decoration: none;
 }
 .section{
   padding-bottom: 220px;
@@ -254,4 +314,77 @@ img{
 .btn.text-cs, .hero__link.text-cs {
   color: var(--text-color);
   text-decoration: none; /* Ensures links don't have underlines */
+}
+/* Media Queries for Responsive Design */
+
+@media (max-width: 1024px) {
+  .section {
+    padding-bottom: 150px;
+  }
+
+  .btn,
+  .hero__link {
+    font-size: var(--normal-font-size);
+    height: 50px;
+    padding-inline: 20px;
+  }
+
+  .card-one, .card-two {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-inline: 20px;
+  }
+
+  .section__title {
+    font-size: var(--h2-font-size);
+  }
+
+  .section__subtitle {
+    font-size: var(--tiny-font-size);
+    margin-bottom: 40px;
+  }
+
+  .btn {
+    font-size: var(--tiny-font-size);
+    height: 40px;
+    padding-inline: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-inline: 10px;
+  }
+
+  .section {
+    padding-bottom: 100px;
+  }
+
+  .section__title {
+    font-size: var(--h3-font-size);
+  }
+
+  .section__subtitle {
+    font-size: var(--tiny-font-size);
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    font-size: var(--tiny-font-size);
+    height: 35px;
+    padding-inline: 10px;
+  }
+
+  .card-one, .card-two {
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .link {
+    font-size: var(--tiny-font-size);
+  }
 }
