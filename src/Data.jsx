@@ -18,10 +18,6 @@ export const links = [
     name: 'Home',
     path: 'home',
   },
-  // {
-  //   name: 'Services',
-  //   path: 'services',
-  // },
   {
     name: 'Skills',
     path: 'skills',
@@ -33,60 +29,6 @@ export const links = [
   {
     name: 'Resume',
     path: 'resume',
-  },
-  // {
-  //   name: 'Testimonials',
-  //   path: 'testimonial',
-  // },
-  // {
-  //   name: 'Pricing',
-  //   path: 'pricing',
-  // },
-  // {
-  //   name: 'Blog',
-  //   path: 'blog',
-  // },
-  // {
-  //   name: 'Contact',
-  //   path: 'contact',
-  // },
-];
-
-export const services = [
-  {
-    id: 1,
-    name: 'Web Development',
-    title: 'Web Design & Logo',
-    description:
-      'Web designers craft the overall vision & plan for a website layout. Professional logo development: Business, Company, or Personal.',
-  },
-  {
-    id: 2,
-    name: ' Full-Stack Development ',
-    title: ' iOS & Android ',
-    description:
-      'Design Software applications to run on mobile devices. Modern and mobile-ready application that will help you reach all of your marketing.',
-  },
-  {
-    id: 3,
-    name: ' Game Development ',
-    title: ' Unity & Unreal Engine ',
-    description:
-      ' Creating games & describes the design, development and release of a game. Developing unique mobile android and ios games. ',
-  },
-  {
-    id: 4,
-    name: ' Advertising ',
-    title: ' Google Ads ',
-    description:
-      ' Advertising services include: Google search result pages, gmails, YouTube and other websites participated in Google Ads program. ',
-  },
-  {
-    id: 5,
-    name: ' Music Writing ',
-    title: ' Sound Track ',
-    description:
-      'Music copying, writing, creating, transcription and composition services.',
   },
 ];
 
@@ -220,8 +162,8 @@ export const projects = [
       title: 'Real-Time CDC crossmatch imaging',
       description:
         'This project is a collaboration between IIITD, Max HealthCare, and iHub Anubhuti to develop a DL-based predictive model using UNet and YOLOv9 for analyzing CDC crossmatch imaging and FISH techniques, aiming to improve organ transplantation risk assessment.',
-      // githubLink: "https://github.com/Annu117/Yoga.git", 
-      // websiteLink: "https://annu117.github.io/Yoga/"
+      // githubLink: "", 
+      // websiteLink: ""
       },
 
   {
@@ -325,49 +267,5 @@ export const cv = [
       '',
     category: 'experience',
   },
-
-  
 ];
 
-export const testimonials = [
-  {
-    id: 1,
-    img: Testimonial1,
-    name: 'The 65th Square (Chess Club)',
-    author: 'Event Organizing Team',
-    description:
-      '',
-  },
-  {
-    id: 2,
-    img: Testimonial2,
-    name: 'Mic Drop',
-    author: 'Event and PR Team',
-    description:
-      '',
-  },
-  {
-    id: 3,
-    img: Testimonial3,
-    name: 'Odyssey (College Fest)',
-    author: 'Ambience OT',
-    description:
-      '',
-  },
-  {
-    id: 4,
-    img: Testimonial4,
-    name: 'Jennifer Smith',
-    author: 'CEO & Founder',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-  {
-    id: 5,
-    img: Testimonial5,
-    name: 'Paul Freeman',
-    author: 'Photographer',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-];
