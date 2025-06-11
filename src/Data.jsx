@@ -223,7 +223,7 @@ export const cv = [
   {
     id: 2,
     title: 'Higher Secondary',
-    subtitle: 'Kendriya Vidyalaya Pushp Vihar, New Delhi',
+    subtitle: '',
     date: '2020 - 2021',
     description:
       '',
@@ -233,7 +233,7 @@ export const cv = [
   {
     id: 3,
     title: 'Secondary School',
-    subtitle: 'Kendriya Vidyalaya Sector-5 Dwarka, New Delhi',
+    subtitle: '',
     date: '2018 - 2019',
     description:
       '',

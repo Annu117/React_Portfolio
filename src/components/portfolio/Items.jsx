@@ -28,14 +28,14 @@ const Items = ({porjectItems}) => {
               <a href={githubLink} target="_blank" rel="noopener noreferrer" className="link project__link" >
                 GitHub
               </a>
-              {websiteLink && ( // Render website link only if available
+              {websiteLink && ( 
                 <>
                   <span className="separator">  |  </span>
                   <a href={websiteLink} target="_blank" rel="noopener noreferrer" className="link project__link" >
                     Website
                   </a>
                 </>
-              )}{report && ( // Render website link only if available
+              )}{report && ( 
               <>
                 <span className="separator">  |  </span>
                 <a href={report} target="_blank" rel="noopener noreferrer" className="link project__link" >
@@ -46,8 +46,6 @@ const Items = ({porjectItems}) => {
               <FaArrowRight className='link__icon'></FaArrowRight>
             </div>
             </div>
-            {/* <img src={shapeTwo} alt="" className="shape c__shape" /> */}
-
             </motion.div>
         );
     })}

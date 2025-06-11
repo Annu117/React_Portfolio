@@ -47,15 +47,7 @@ const Header = () => {
                     </ul>
                 </div>
             </div>
-            {/* <div className="nav__btns">
-                <div className="theme__toggle">
-                    <BsSun />
-                </div>
-                <div className="nav__toggle">
-                    <span></span>
-                    <span></span>
-                </div>
-            </div> */}
+            
             <div className={`${showMenu?"nav__toggle animate-toggle": 'nav__toggle'}`} 
             onClick={()=> setShowMenu(!showMenu)}>
                 <span></span>

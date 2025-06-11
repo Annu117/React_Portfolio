@@ -10,7 +10,6 @@ import Typewriter from "typewriter-effect";
 
 import './home.css';
 import Skills from '../skills/Skills';
-// import './App.css';
 
 const Home = () => {
 
@@ -29,7 +28,6 @@ const Home = () => {
         </h1>
 
         <p className='home__job'>
-            {/* <span className='text-cs'>I Am</span><b>{typedText}</b> */}
             <span className='text-cs'>I Am a</span>
             <b >
                 {/* Full-Stack Developer */}
@@ -55,17 +53,7 @@ const Home = () => {
                
             </div>
             </Tilt>
-            {/* <p className='home__data home__data-one'>
-                <span className='text-lg'>12 <b>+</b></span>
-                <span className='text-sm text-cs'>Years of <span>Experience</span></span>
-            </p>
-            <p className='home__data home__data-two'>
-                <span className='text-lg'>330 </span>
-                <span className='text-sm text-cs'>Completed <span>Projects</span></span>
-            </p> */}
-            {/* <img src={shapeOne} alt="" className="shape shape__1" /> */}
-            {/* <img src={shapeTwo} alt="" className="shape shape__2" />
-            <img src={shapeTwo} alt="" className="shape shape__3" /> */}
+           
         </div>
         
         <p className='home__text'>
@@ -87,12 +75,9 @@ const Home = () => {
             </a>
         </div>
         <div className='home__btns'>
-{/*             <a href='https://drive.google.com/drive/folders/1VkRf37llfrpfcXqO5VGrINK4u6SkRbMI?usp=sharing' className="btn text-cs" target="_blank"  download> */}
            <a href='' className="btn text-cs">
-
                 {/* Download CV */}
                 <span class="zoom-text">Download CV</span>
-
             </a>
             <a href='#skills' className='hero__link text-cs'>
               My Skills
@@ -100,7 +85,6 @@ const Home = () => {
         </div>
     </div>
     </div>
-    {/* <Skills id="skills" /> */}
   </section>
   );
 }
